@@ -23,7 +23,7 @@ New-Item -Path Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VisualStud
 Write-Output "Creating Registry Directory complete"
 
 Write-Output "Adding Entry to ...\Command"
-New-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VisualStudioCode\Command -Name "(Default)" -PropertyType String -Value C:\openVisualCode\script.exe
+New-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VisualStudioCode\Command -Name "(Default)" -PropertyType String -Value C:\openVisualCode\script.cmd
 Write-Output "Adding Entry coomplete"
 Write-Output "Installation is complete"
 Write-Output "Restart explorer.exe and right click an explorer menu to check if VisualStudioCode option is ready"
