@@ -1,17 +1,13 @@
-Write-Output "Installing ps2exe for converting future script to .exe"
-Install-Module -Name ps2exe
-Write-Output "Installing ps2exe complete"
-
 Write-Output "Making Directory: C:\openVisualCode"
 New-Item -Path "c:\" -Name "openVisualCode" -ItemType "directory"
 Write-Output "Making Directory: C:\openVisualCode complete"
 
-Write-Output "Creating file script.ps1 at Directory: C:\openVisualCode"
-New-Item C:\openVisualCode\script.ps1
-Write-Output "Creating file script.ps1 at Directory: C:\openVisualCode Complete"
+Write-Output "Creating file script.cmd at Directory: C:\openVisualCode"
+New-Item C:\openVisualCode\script.cmd
+Write-Output "Creating file script.cmd at Directory: C:\openVisualCode Complete"
 
-Write-Output "Setting content of file: C:\openVisualCode\script.ps1"
-Set-Content C:\openVisualCode\script.ps1 "code ."
+Write-Output "Setting content of file: C:\openVisualCode\script.cmd"
+Set-Content C:\openVisualCode\script.cmd "code ."
 Write-Output "Setting content complete"
 
 Write-Output "Converting powershell script to executable"
