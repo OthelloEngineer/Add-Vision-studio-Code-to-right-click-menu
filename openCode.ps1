@@ -10,10 +10,6 @@ Write-Output "Setting content of file: C:\openVisualCode\script.cmd"
 Set-Content C:\openVisualCode\script.cmd "code ."
 Write-Output "Setting content complete"
 
-Write-Output "Converting powershell script to executable"
-Invoke-ps2exe C:\openVisualCode\script.ps1
-Write-Output "Convertion complete"
-
 Write-Output "Creating registry directory Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\testingcode"
 New-Item -Path Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VisualStudioCode
 Write-Output "Creating Registry Directory complete"
