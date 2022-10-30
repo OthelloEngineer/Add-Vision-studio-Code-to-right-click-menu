@@ -1,5 +1,5 @@
 Write-Output "Making Directory: C:\openVisualCode"
-New-Item -Path "c:\" -Name "openVisualCode" -ItemType "directory"
+New-Item -Path "c:\" -Name "openVisualCode" -ItemType "directory" 
 Write-Output "Making Directory: C:\openVisualCode complete"
 
 Write-Output "Creating file script.cmd at Directory: C:\openVisualCode"
